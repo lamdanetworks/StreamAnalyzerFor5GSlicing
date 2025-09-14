@@ -1,0 +1,36 @@
+services:
+  metrics-aggregator-app:
+    command:  ["sh", "-c" , "poetry run alembic upgrade head && poetry run uvicorn app.main:app --host 0.0.0.0 --port 8000"]
+    build: .
+    restart: unless-stopped
+    container_name: metrics-server-api
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db-server
+    env_file:
+      - .env
+
+    db-server:
+    image: postgres:15
+    container_name: db-server
+    restart: always
+    ports:
+      - "40015:5432"
+    environment:
+      POSTGRES_USER: None
+      POSTGRES_PASSWORD: None
+      POSTGRES_DB: None
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    command: >
+      postgres
+      -c logging_collector=on
+      -c log_statement=all
+      -c log_connections=on
+      -c log_disconnections=on
+
+volumes:
+  postgres_data:
