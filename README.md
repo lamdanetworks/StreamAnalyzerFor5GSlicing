@@ -33,7 +33,7 @@ conda activate 6gxr
 pip install -r centralized_learning/requirements.txt if training/running the centralized agent for UE admission control.
 pip install inside distributed_agents/ if training/running agent for distributed UE scheduling.
 
-### 3. 🚀 Running the Code
+## 🚀 Running the Code
 For Centralized Learning
 bash
 Copy
@@ -48,25 +48,25 @@ cd distributed_agents
 python train.py
 Follow each folder's README.md for detailed instructions.
 
-🔐 Access & Support
+## 🔐 Access & Support
 For UERANSIM configuration and testbed access:
 📧 5gtn-admin@oulu.fi
 
-For access control variables (e.g. username, hostname, password):
+## For access control variables (e.g. username, hostname, password):
 📧 5gtn-admin@oulu.fi
 
-For general technical or deployment support:
+## For general technical or deployment support:
 📧 streamanalyzer-6gxr@lamdanetworks.io
 
-📜 License
+### 📜 License
 Licensed under MIT License (or adapt based on actual license used).
 
-📣 Citation / Attribution
+### 📣 Citation / Attribution
 If you use this code in your research or project, please cite our 6G-XR OC2 contribution and reference:
 
 “StreamAnalyzerFor5GSlicing: Reinforcement Learning Agents for 5G UE Admission and Scheduling in Sliced Networks – 6G-XR OC2 Extension Project, 2025.”
 
-🤝 Acknowledgements
-This work has been developed as part of the 6G-XR Open Call 2, under the SNS JU Horizon Europe initiative.
+### 🤝 Acknowledgements
+This work has been developed as part of the 6G-XR Open Call 2, under the SNS JU Horizon Europe initiative with the support of our UOULU Mentor and his technical team.
 Testbed access and validation were supported by University of Oulu’s 5GTN.
 
