@@ -86,7 +86,8 @@ For general technical or deployment or operational support:
 
 ## 📜 License
 
-Released under [GNU GENERAL PUBLIC LICENSE Version 3]  (https://github.com/lamdanetworks/StreamAnalyzerFor5GSlicing/blob/main/LICENSE) © 2025 [Lamda Networks](https://lamdanetworks.io)
+Released under [GNU GENERAL PUBLIC LICENSE Version 3](https://github.com/lamdanetworks/StreamAnalyzerFor5GSlicing/blob/main/LICENSE)
+ © 2025 [Lamda Networks](https://lamdanetworks.io)
 
 ---
 
