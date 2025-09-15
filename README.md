@@ -51,8 +51,8 @@ conda activate 6gxr
 ```bash
 cd centralized_learning/src
 pip install -r requirements.txt
-python train.py
-python 6gxr_admission_controller.py
+python 6gxr_admission_controller_trainer.py # (optional follow if you need to train the agent with your own data traces)
+python 6gxr_admission_controller.py # To run the agent using the trained model
 ```
 
 ### 🌐 Distributed Agents
@@ -60,7 +60,8 @@ python 6gxr_admission_controller.py
 ```bash
 cd distributed_agents
 pip install -r requirements.txt
-python train.py
+python trainer.py # (optional follow if you need to train the agent with your own data traces)
+python   nnn  # to run the agents performing the UE scheduling for slices 1 and 2 in Cumucore
 ```
 
 > 📖 Follow each folder's `README.md` for detailed setup and environment-specific configurations.
@@ -69,10 +70,7 @@ python train.py
 
 ## 🔐 Access & Support 
 
-For UERANSIM configuration and testbed access:
-📧 5gtn-admin@oulu.fi
-
-For access control variables (e.g. username, hostname, password) i.e. the ones declared as `None` in:
+For UERANSIM configuration, testbed access and access control variables (e.g. username, hostname, password) i.e. the ones declared as `None` in:
   - `utils.py`
   - `local_scripts/*.py`:
 📧 5gtn-admin@oulu.fi and replace `None` with the provided values.
