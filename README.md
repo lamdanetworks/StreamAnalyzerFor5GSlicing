@@ -8,7 +8,7 @@ An open-source extension project under **6G-XR OC2**, delivering AI/ML-based cen
 
 - 🎛 Centralized UE Admission Controller using binary classification
 - 🤖 Distributed Multi-Agent UE Scheduler using Deep Reinforcement Learning
-- 🔧 Seamless integration with UERANSIM and Cumucore 5G Core
+- 🔧 Seamless integration with UERANSIM and 5GTN Cumucore 5G Core
 
 ---
 
@@ -72,12 +72,12 @@ python plot.py # to create plots comparing your agents with the SJF basedline an
 
 ## 🔐 Access & Support 
 
-For UERANSIM configuration, testbed access and access control variables (e.g. username, hostname, password) i.e. the ones declared as `None` in:
+For UERANSIM configuration, testbed access and access control variables (e.g. username, hostname, password) needed to access resources i.e. the ones declared as `None` in:
   - `utils.py`
   - `local_scripts/*.py`:
 📧 5gtn-admin@oulu.fi and replace `None` with the provided values.
 
-For general technical or deployment or operational support:
+For general technical questions, deployment or operational support:
 📧 streamanalyzer-6gxr@lamdanetworks.io
 
   
@@ -96,7 +96,7 @@ If you use this work in your research, please cite it as:
 
 ```bibtex
 @misc{streamanalyzer2025,
-  title={StreamAnalyzerFor5GSlicing: AI-based Resource Optimization for 5G Slices},
+  title={StreamAnalyzerFor5GSlicing: AI-based Resource Optimization for a Cumucore 5GC},
   author={Lamda Networks},
   year={2025},
   howpublished={\url{https://github.com/lamdanetworks/StreamAnalyzerFor5GSlicing}}
