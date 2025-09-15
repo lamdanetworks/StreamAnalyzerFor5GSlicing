@@ -35,8 +35,8 @@ pip install inside distributed_agents/ if training/running agent for distributed
 
 ---
 
-## 🚀 Running the Code
-
+**## 🚀 Running the Code
+**
 For Centralized Learning
 bash
 Copy
