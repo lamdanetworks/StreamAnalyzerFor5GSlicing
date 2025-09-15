@@ -1,6 +1,6 @@
 # 📡 StreamAnalyzerFor5GSlicing
 
-An open-source extension project under **6G-XR OC2**, delivering AI/ML-based centralized and distributed learning solutions for **5G network slicing** as an extension for the UOULU 5GTN testbed.
+An open-source extension project under **6G-XR OC2**, delivering AI/ML-based centralized and distributed learning solutions for **5G network slicing** for the UOULU 5GTN testbed.
 
 ---
 
