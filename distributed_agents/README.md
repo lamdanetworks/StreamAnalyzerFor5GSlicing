@@ -1,10 +1,8 @@
 This folder contains the necessary files to train and test agents UPF500 and UPF250, as they are declared in the environment file ./env/env.py
 
-To train the agents, run the following commands:
+To train the agents, run the following command:
 
-1. cd ~/StreamAnalyzerFor5GSlicing/distributed_agents
-2. conda activate temp
-3. python train.py
+```python train.py
 
 This trains the two agents and stores their best model (the two agents are equal in our environment thus there is not need for a separate best model per agent) inside folder 'best_model'.
 
