@@ -71,7 +71,7 @@ python train.py
   - `utils.py`
   - `local_scripts/*.py`
   
-Request values from `5gtn-admin@oulu.fi` and replace None with the provided values.
+Request values from `5gtn-admin@oulu.fi` and replace `None` with the provided values.
 
 ---
 
