@@ -64,23 +64,24 @@ python train.py
 
 ---
 
-## 🔐 Access Configuration
+## 🔐 Access & Support 
+
+For UERANSIM configuration and testbed access:
+📧 5gtn-admin@oulu.fi
+
+For access control variables (e.g. username, hostname, password) i.e. the ones declared as `None` in:
+  - `utils.py`
+  - `local_scripts/*.py`:
+📧 5gtn-admin@oulu.fi and replace `None` with the provided values.
+
+For general technical or deployment or operational support:
+📧 streamanalyzer-6gxr@lamdanetworks.io
 
 - For 6gxr-system-code: Contact `5gtn-admin@oulu.fi` to receive valid UERANSIM configurations.
 - Some variables (e.g., auth tokens, IPs) are declared as `None` in:
   - `utils.py`
   - `local_scripts/*.py`
   
-Request values from `5gtn-admin@oulu.fi` and replace `None` with the provided values.
-
----
-
-
-## 📬 Contact
-
-- 📧 Email: [streamanalyzer-6gxr@lamdanetworks.io](mailto:streamanalyzer-6gxr@lamdanetworks.io)
-- 💡 Project support and troubleshooting available via direct contact.
-
 ---
 
 ## 📜 License
