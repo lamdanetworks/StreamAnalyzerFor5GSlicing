@@ -23,17 +23,17 @@ def predict_admission(ue_features):
 
 ENDPOINT = "http://localhost:8000/collect"
 
-hostname = "172.29.19.11" #IP of UERANSIM
+hostname = None  #IP of UERANSIM
 port = 22  # Default SSH port
-username = "leon"
-password = "cia-2021"
-sudo_password='cia-2021'
-hostnameUPF250 = "172.29.19.3" #IP of UPF250
-hostnameUPF500 = "172.29.19.6" #IP of UPF500
+username = None
+password = None
+sudo_password= None
+hostnameUPF250 = None #IP of UPF250
+hostnameUPF500 = None #IP of UPF500
 
 portUPF = 22  # Default SSH port
-usernameUPF = "leon"
-passwordUPF = "FinlandOU-2025*"
+usernameUPF = None
+passwordUPF = None
 
 result_rtt = 0
 result_speed ="default"
@@ -273,4 +273,4 @@ if __name__ == "__main__":
         print ('################################## total_bw:', total_bw)         
         time.sleep(20) # performing the next measurement in the next half min
 
-    system_init() # so we avoid hd problems
+    system_init() # so we avoid hd space problems
