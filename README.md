@@ -28,7 +28,7 @@ An open-source extension project under **6G-XR OC2**, delivering AI/ML-based cen
 
 ### 📦 Prerequisites
 
-- Python >= 3.8
+- Python >= 3.11
 
 ---
 
@@ -60,8 +60,10 @@ python 6gxr_admission_controller.py # To run the agent using the trained model
 ```bash
 cd distributed_agents
 pip install -r requirements.txt
-python trainer.py # (optional follow if you need to train the agent with your own data traces)
-python   nnn  # to run the agents performing the UE scheduling for slices 1 and 2 in Cumucore
+bash run_variations.sh # to collect necessary data for training for different configurations (see the .sh file)
+python train.py # to train agents based on the training data 
+python sjf.py # to obtain results for the Shortest Job First (SFJ) baseline
+python plot.py # to create plots comparing your agents with the SJF basedline and the adjust RL settings in ./env/env.py
 ```
 
 > 📖 Follow each folder's `README.md` for detailed setup and environment-specific configurations.
