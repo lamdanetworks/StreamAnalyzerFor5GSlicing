@@ -18,7 +18,7 @@ An open-source extension project under **6G-XR OC2**, delivering AI/ML-based cen
 /
 ├── centralized_learning/     # Centralized learning for UE admission control
 ├── distributed_agents/       # Multi-agent RL-based for UE scheduling
-├── 6gxr-system-code/         # 5GTN & UERANSIM integration 
+├── 6gxr-system-code/         # Scripts for 5GTN & UERANSIM  
 ```
 
 ---
