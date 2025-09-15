@@ -1,80 +1,116 @@
-# 📡 StreamAnalyzerFor5GSlicing
+📡 StreamAnalyzerFor5GSlicing
 
-**6G-XR OC2 Extension Project – Open Source Release**
+An open-source extension project under 6G-XR OC2, delivering AI/ML-based centralized and distributed learning solutions for 5G network slicing over the UOULU 5GTN testbed.
 
-StreamAnalyzerFor5GSlicing is an AI-enhanced reinforcement learning framework for UE admission control and scheduling in real 5G network slicing scenarios. Developed and validated on **UOULU’s 5GTN testbed**, this system integrates centralized and distributed learning agents for network resource optimization.
+🚀 Features
 
----
+🎛 Centralized UE Admission Controller using Deep Q-Networks (DQN)
 
-## 📁 Project Structure
+🤖 Distributed Multi-Agent Scheduler using Reinforcement Learning
 
-| Folder | Description |
-|--------|-------------|
-| `6gxr-system-code/` | Core integration with real network functions. Requires UERANSIM configuration for 5GTN. |
-| `centralized_learning/` | Centralized Deep RL-based UE admission control agent. |
-| `distributed_agents/` | Multi-agent distributed scheduling with reinforcement learning. |
+📈 Live bandwidth monitoring via real-time wget-triggered bandwidth logging
 
-> 🔐 Access to certain configuration variables (marked as `None`) in `util.py` and `local_scripts/*.py` requires credentials—see **Access & Support** below.
+🔧 Seamless integration with UERANSIM and Cumucore 5G Core
 
----
+📁 Project Structure
 
-## ⚙️ Installation & Setup
+/
+├── centralized_learning/     # Centralized DQN-based learning
+├── distributed_agents/       # Multi-agent RL-based scheduling
+├── 6gxr-system-code/         # 5GTN & UERANSIM integration (restricted)
+├── utils/                    # Shared utilities (jobs, bandwidth, logging)
+├── local_scripts/            # Local execution scripts (restricted access)
+├── README.md
 
-### 1. Clone the repository
+🏁 Getting Started
 
-```bash
+📦 Prerequisites
+
+Python >= 3.8
+
+pip install -r requirements.txt
+
+Access to UOULU 5GTN (contact 5gtn-admin@oulu.fi)
+
+🔧 Installation
+
 git clone https://github.com/lamdanetworks/StreamAnalyzerFor5GSlicing.git
 cd StreamAnalyzerFor5GSlicing
+pip install -r requirements.txt
 
-**###2. Set up Python environment **
-```bash
-conda create -n 6gxr python=3.11
-conda activate 6gxr
-pip install -r centralized_learning/requirements.txt if training/running the centralized agent for UE admission control.
-pip install inside distributed_agents/ if training/running agent for distributed UE scheduling.
+🧪 Running the Code
 
----
-## 🚀 Running the Code
+➕ Centralized Learning
 
-### For Centralized Learning
-```bash
 cd centralized_learning
 python train.py
-**## 🚀 Running the Code
-**
-For Centralized Learning
-bash
-Copy
-Edit
-cd centralized_learning
-python train.py
-For Distributed Agents
-bash
-Copy
-Edit
+
+🌐 Distributed Agents
+
 cd distributed_agents
 python train.py
-Follow each folder's README.md for detailed instructions.
 
-## 🔐 Access & Support
-For UERANSIM configuration and testbed access:
-📧 5gtn-admin@oulu.fi
+📖 Follow each folder's README.md for detailed setup and environment-specific configurations.
 
-## For access control variables (e.g. username, hostname, password):
-📧 5gtn-admin@oulu.fi
+🔐 Access & Configuration
 
-## For general technical or deployment support:
-📧 streamanalyzer-6gxr@lamdanetworks.io
+For 6gxr-system-code: Contact 5gtn-admin@oulu.fi to receive valid UERANSIM configurations.
 
-### 📜 License
-Licensed under MIT License (or adapt based on actual license used).
+Some variables (e.g., auth tokens, IPs) are declared as None in:
 
-### 📣 Citation / Attribution
-If you use this code in your research or project, please cite our 6G-XR OC2 contribution and reference:
+utils.py
 
-“StreamAnalyzerFor5GSlicing: Reinforcement Learning Agents for 5G UE Admission and Scheduling in Sliced Networks – 6G-XR OC2 Extension Project, 2025.”
+local_scripts/*.py
 
-### 🤝 Acknowledgements
-This work has been developed as part of the 6G-XR Open Call 2, under the SNS JU Horizon Europe initiative with the support of our UOULU Mentor and his technical team.
-Testbed access and validation were supported by University of Oulu’s 5GTN.
+distributed_agents/utils.py
 
+Request values from 5gtn-admin@oulu.fi or streamanalyzer-6gxr@lamdanetworks.io.
+
+📊 Sample Output
+
+Episode
+
+Avg Q Value
+
+Loss
+
+Total Reward
+
+16
+
+0.48
+
+0.57
+
+-1.093
+
+17
+
+0.44
+
+0.70
+
+-1.320
+
+📬 Contact
+
+📧 Email: streamanalyzer-6gxr@lamdanetworks.io
+
+💡 Project support and troubleshooting available via direct contact.
+
+📜 License
+
+Released under MIT License © 2025 Lamda Networks
+
+📚 Citation
+
+If you use this work in your research, please cite it as:
+
+@misc{streamanalyzer2025,
+  title={StreamAnalyzerFor5GSlicing: AI-based Resource Optimization for 5G Slices},
+  author={Lamda Networks},
+  year={2025},
+  howpublished={\url{https://github.com/lamdanetworks/StreamAnalyzerFor5GSlicing}}
+}
+
+download readme.md ready to be used in github
