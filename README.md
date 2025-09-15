@@ -6,7 +6,7 @@ An open-source extension project under **6G-XR OC2**, delivering AI/ML-based cen
 
 ## 🚀 Features
 
-- 🎛 Centralized UE Admission Controller using Deep Q-Networks (DQN)
+- 🎛 Centralized UE Admission Controller using binary classification
 - 🤖 Distributed Multi-Agent UE Scheduler using Deep Reinforcement Learning
 - 📈 Live bandwidth monitoring via real-time wget-triggered bandwidth logging
 - 🔧 Seamless integration with UERANSIM and Cumucore 5G Core
@@ -29,17 +29,17 @@ An open-source extension project under **6G-XR OC2**, delivering AI/ML-based cen
 ### 📦 Prerequisites
 
 - Python >= 3.8
-- `pip install -r requirements.txt`
-- Access to UOULU 5GTN (contact `5gtn-admin@oulu.fi`)
 
 ---
 
-## 🔧 Installation
+## 🔧 Installation & Environment setup
 
 ```bash
 git clone https://github.com/lamdanetworks/StreamAnalyzerFor5GSlicing.git
 cd StreamAnalyzerFor5GSlicing
-pip install -r requirements.txt
+conda env create -f 6gxr.yml
+conda activate 6gxr
+
 ```
 
 ---
@@ -49,14 +49,17 @@ pip install -r requirements.txt
 ### ➕ Centralized Learning
 
 ```bash
-cd centralized_learning
+cd centralized_learning/src
+pip install -r requirements.txt
 python train.py
+python 6gxr_admission_controller.py
 ```
 
 ### 🌐 Distributed Agents
 
 ```bash
 cd distributed_agents
+pip install -r requirements.txt
 python train.py
 ```
 
