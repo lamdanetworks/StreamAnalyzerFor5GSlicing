@@ -85,7 +85,7 @@ Request values from `5gtn-admin@oulu.fi` and replace None with the provided valu
 
 ## 📜 License
 
-Released under [MIT License](LICENSE) © 2025 [Lamda Networks](https://lamdanetworks.io)
+Released under GNU General Public License v3.0[MIT License](LICENSE) © 2025 [Lamda Networks](https://lamdanetworks.io)
 
 ---
 
