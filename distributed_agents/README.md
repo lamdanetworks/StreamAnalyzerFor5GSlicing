@@ -2,7 +2,7 @@ This folder contains the necessary files to train and test agents UPF500 and UPF
 
 To train the agents, run the following command:
 
-```python train.py
+python train.py
 
 This trains the two agents and stores their best model (the two agents are equal in our environment thus there is not need for a separate best model per agent) inside folder 'best_model'.
 
