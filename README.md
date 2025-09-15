@@ -34,7 +34,12 @@ pip install -r centralized_learning/requirements.txt if training/running the cen
 pip install inside distributed_agents/ if training/running agent for distributed UE scheduling.
 
 ---
+## 🚀 Running the Code
 
+### For Centralized Learning
+```bash
+cd centralized_learning
+python train.py
 **## 🚀 Running the Code
 **
 For Centralized Learning
