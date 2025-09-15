@@ -32,8 +32,11 @@ conda create -n 6gxr python=3.11
 conda activate 6gxr
 pip install -r centralized_learning/requirements.txt if training/running the centralized agent for UE admission control.
 pip install inside distributed_agents/ if training/running agent for distributed UE scheduling.
+
 ---
+
 ## 🚀 Running the Code
+
 For Centralized Learning
 bash
 Copy
