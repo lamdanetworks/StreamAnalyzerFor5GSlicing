@@ -8,7 +8,6 @@ An open-source extension project under **6G-XR OC2**, delivering AI/ML-based cen
 
 - 🎛 Centralized UE Admission Controller using binary classification
 - 🤖 Distributed Multi-Agent UE Scheduler using Deep Reinforcement Learning
-- 📈 Live bandwidth monitoring via real-time wget-triggered bandwidth logging
 - 🔧 Seamless integration with UERANSIM and Cumucore 5G Core
 
 ---
