@@ -1,13 +1,13 @@
 # 📡 StreamAnalyzerFor5GSlicing
 
-An open-source extension project under **6G-XR OC2**, delivering AI/ML-based centralized and distributed learning solutions for **5G network slicing** over the UOULU 5GTN testbed.
+An open-source extension project under **6G-XR OC2**, delivering AI/ML-based centralized and distributed learning solutions for **5G network slicing** as an extension for the UOULU 5GTN testbed.
 
 ---
 
 ## 🚀 Features
 
 - 🎛 Centralized UE Admission Controller using Deep Q-Networks (DQN)
-- 🤖 Distributed Multi-Agent Scheduler using Reinforcement Learning
+- 🤖 Distributed Multi-Agent UE Scheduler using Deep Reinforcement Learning
 - 📈 Live bandwidth monitoring via real-time wget-triggered bandwidth logging
 - 🔧 Seamless integration with UERANSIM and Cumucore 5G Core
 
@@ -17,12 +17,9 @@ An open-source extension project under **6G-XR OC2**, delivering AI/ML-based cen
 
 ```
 /
-├── centralized_learning/     # Centralized DQN-based learning
-├── distributed_agents/       # Multi-agent RL-based scheduling
-├── 6gxr-system-code/         # 5GTN & UERANSIM integration (restricted)
-├── utils/                    # Shared utilities (jobs, bandwidth, logging)
-├── local_scripts/            # Local execution scripts (restricted access)
-├── README.md
+├── centralized_learning/     # Centralized DQN-based learning for UE admission control
+├── distributed_agents/       # Multi-agent RL-based for UE scheduling
+├── 6gxr-system-code/         # 5GTN & UERANSIM integration 
 ```
 
 ---
@@ -67,26 +64,17 @@ python train.py
 
 ---
 
-## 🔐 Access & Configuration
+## 🔐 Access Configuration
 
 - For 6gxr-system-code: Contact `5gtn-admin@oulu.fi` to receive valid UERANSIM configurations.
 - Some variables (e.g., auth tokens, IPs) are declared as `None` in:
   - `utils.py`
   - `local_scripts/*.py`
-  - `distributed_agents/utils.py`
-
-Request values from `5gtn-admin@oulu.fi` or `streamanalyzer-6gxr@lamdanetworks.io`.
-
----
-
-## 📊 Sample Output
-
-| Episode | Avg Q Value | Loss | Total Reward |
-| ------- | ----------- | ---- | ------------ |
-| 16      | 0.48        | 0.57 | -1.093       |
-| 17      | 0.44        | 0.70 | -1.320       |
+  
+Request values from `5gtn-admin@oulu.fi` and replace None with the provided values.
 
 ---
+
 
 ## 📬 Contact
 
