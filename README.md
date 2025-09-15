@@ -77,10 +77,6 @@ For access control variables (e.g. username, hostname, password) i.e. the ones d
 For general technical or deployment or operational support:
 📧 streamanalyzer-6gxr@lamdanetworks.io
 
-- For 6gxr-system-code: Contact `5gtn-admin@oulu.fi` to receive valid UERANSIM configurations.
-- Some variables (e.g., auth tokens, IPs) are declared as `None` in:
-  - `utils.py`
-  - `local_scripts/*.py`
   
 ---
 
