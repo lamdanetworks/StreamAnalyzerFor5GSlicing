@@ -8,10 +8,6 @@ This trains the two agents and stores their best model (the two agents are equal
 
 You may then use the file ./best_model/best_model.pth to run your agents at realtime and/or for testing the agents, compare them with baselines, etc.
 
-To test agent  UPF500, simply run python test_upf500.py. This will provide you step by step logs of all the important steps performed by the agent. To capture the logs you may use 'python test_upf500.py > log.test.upf500.log'.
-
-
-To test agent  UPF500, simply run python test_upf500.py. This will provide you step by step logs of all the important steps performed by the agent. To capture the logs you may use 'python test_upf500.py > log.test.upf500.log'.
 
 Note that we assume that 100 episodes (i.e. epoques) have been used to derive the best trained model when running 'python train.py'. If you would like to run the training for more episodes please edit the file train.py, replace the relevant variable 'num_episodes' in line 109 of the file and save the file. Then, run 'python train.py' to train your environment for your requested number of episodes.
 
