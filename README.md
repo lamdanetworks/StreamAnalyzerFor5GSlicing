@@ -85,7 +85,7 @@ Request values from `5gtn-admin@oulu.fi` and replace `None` with the provided va
 
 ## 📜 License
 
-Released under   GNU GENERAL PUBLIC LICENSE Version 3  © 2025 [Lamda Networks](https://lamdanetworks.io)
+Released under   GNU GENERAL PUBLIC LICENSE Version LICENSE © 2025 [Lamda Networks](https://lamdanetworks.io)
 
 ---
 
